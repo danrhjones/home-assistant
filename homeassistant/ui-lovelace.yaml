@@ -18,7 +18,7 @@ views:
         entity: sensor.temperature
         name: Printer case temperature
       - type: sensor
-        entity: sensor.humidity_2
+        entity: sensor.humidity
         name: Printer case humidity
     path: default_view
     title: Home
