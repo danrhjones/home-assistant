@@ -5,6 +5,7 @@ services:
     image: homeassistant/home-assistant
     volumes:
       - '/home/pi/home-assistant/homeassistant'
+      - ${USERDIR}/home-assistant/homeassistant:/config
       - '/etc/localtime:/etc/localtime:ro'
     restart: always
     network_mode: host
