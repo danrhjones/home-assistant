@@ -1,0 +1,25 @@
+title: Home Assistant
+views:
+  - badges:
+      - entity: binary_sensor.updater
+      - entity: person.dan
+      - entity: sun.sun
+    cards:
+      - entity: media_player.lounge
+        type: media-control
+      - entity: media_player.digestive_room_wifi
+        type: media-control
+      - entity: media_player.play_room
+        type: media-control
+      - entity: weather.home
+        show_forecast: true
+        type: weather-forecast
+      - type: sensor
+        entity: sensor.temperature
+        name: Printer case temperature
+      - type: sensor
+        entity: sensor.humidity_2
+        name: Printer case humidity
+    path: default_view
+    title: Home
+

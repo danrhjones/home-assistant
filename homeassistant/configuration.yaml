@@ -1,0 +1,26 @@
+mqtt:
+  discovery: true
+  broker: localhost
+  port: 1883
+  lovelace:
+    mode: yaml
+  sensor:
+    - platform: mqtt
+      name: Temperature
+      unit_of_measurement: C
+      state_topic: home/garage/temperature
+      value_template: '{{value_json.temperature}}'
+    - platform: mqtt
+      name: Humidity
+      unit_of_measurement: '%'
+      state_topic: home/garage/humidity
+      value_template: '{{value_json.humidity}}'
+  default_config: null
+  tts:
+    - platform: google_translate
+
+
+  group: !include groups.yaml
+  automation: !include automations.yaml
+  script: !include scripts.yaml
+  scene: !include scenes.yaml
