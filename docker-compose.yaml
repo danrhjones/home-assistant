@@ -15,6 +15,6 @@ services:
       - '1883:1883'
       - '9002:9001'
     volumes:
-      - '/home/pi/mosquitto/config:/mqtt/config:ro'
-      - '/home/pi/mosquitto/log:/mqtt/log'
-      - '/home/pi/mosquitto/data/:/mqtt/data'
+      - '/home/pi/home-assistant/mosquitto/config:/mqtt/config:ro'
+      - '/home/pi/home-assistant/mosquitto/log:/mqtt/log'
+      - '/home/pi/home-assistant/mosquitto/data/:/mqtt/data'
