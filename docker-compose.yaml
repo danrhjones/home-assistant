@@ -1,14 +1,6 @@
 version: '3.2'
 services:
-  homeassistant:
-    container_name: home-assistant
-    image: homeassistant/home-assistant
-    volumes:
-      - '/home/pi/home-assistant/homeassistant:/config'
-      - '/etc/localtime:/etc/localtime:ro'
-    restart: always
-    network_mode: host
-  mqtt:
+   mqtt:
     container_name: mosquitto
     image: 'eclipse-mosquitto:latest'
     ports:
